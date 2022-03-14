@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="src/css/cartao.css">
     <link rel="stylesheet" href="src/css/listagem.css">
     <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="stylesheet" href="src/css/music-player.css">
 
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="startMusic();">
 
     <main>
         <div class="pokedex">
@@ -59,7 +60,7 @@
                     </div>
                 </div>
 
-                
+
                 <!-- Cartão do Bulbasaur -->
                 <div class="cartao-pokemon tipo-grama" id="cartao-bulbasaur">
                     <div class="cartao-topo">
@@ -272,9 +273,14 @@
 
         </div>
 
+        <div class="botao-futuante">
+            <input type="checkbox" class="playpause-icone" id="playpause-check">
+            <label for="playpause-check"></label>
+        </div>
+
     </main>
-    <script src="src/js/index.js" ></script>
-    <script src="src/js/sound_script.js" ></script>
+    <script src="src/js/index.js"></script>
+    <script src="src/js/sound_script.js"></script>
 </body>
 
 </html>
